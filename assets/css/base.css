@@ -15,7 +15,7 @@
   --line-height: 1.65;
 
   /* Layout (frisch festzulegen) */
-  --content-max: 900px;
+  --content-max: 960px;
   --content-pad: 16px;
 
   /* Neutrale Farben */
@@ -161,6 +161,7 @@ h2,h3,h4,h5{ scroll-margin-top:100px; }
   letter-spacing:.2rem;
   color:inherit;
 }
+
 
 
 
