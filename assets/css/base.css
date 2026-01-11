@@ -20,7 +20,7 @@
 
   /* Neutrale Farben */
   --bg: #fff;
-  --text: #111;
+  --text: #333;
   --muted: #666;
   --border: #DFE2E6;
 
@@ -132,3 +132,4 @@ h2,h3,h4,h5{ scroll-margin-top:100px; }
   letter-spacing:.2rem;
   color:inherit;
 }
+
