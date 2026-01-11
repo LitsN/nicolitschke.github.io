@@ -30,9 +30,9 @@
   --nav-hover-bg: transparent;
 
   /* Footer */
-  --footer-bg: #f7f7f7;
-  --footer-text: #222;
-  --footer-link: #222;
+  --footer-bg: #3c3f44;
+  --footer-text: #fff;
+  --footer-link: #8fb3ff;
 }
 
 *{ box-sizing:border-box; }
@@ -132,4 +132,5 @@ h2,h3,h4,h5{ scroll-margin-top:100px; }
   letter-spacing:.2rem;
   color:inherit;
 }
+
 
