@@ -1,0 +1,112 @@
+/* Callout */
+.callout{
+  padding:5px 10px;
+  margin:10px 0;
+  box-shadow:2px 2px 5px 0 #dadada;
+  line-height:1.7em;
+  background:#fff;
+}
+.callout:hover{ transform:translate(2px,-2px); }
+
+/* Summary */
+.summary::before{
+  margin-bottom:25px;
+  text-align:center;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:16px;
+  line-height:22px;
+  content:"summary";
+  display:block;
+}
+.summary{
+  padding:35px 45px;
+  border-radius:5px;
+  background:#fff;
+  box-shadow:0 15px 40px -10px #dadada;
+  line-height:34px;
+  color:#636363;
+}
+
+/* Code */
+pre{
+  white-space:pre-wrap;
+  word-wrap:break-word;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:20px;
+  margin:1em 0;
+  background:#fff;
+}
+
+/* Tags */
+.artikel-tag-line{
+  list-style:none;
+  padding:0;
+  margin:.5rem 0;
+}
+.artikel-tag{
+  display:inline-block;
+  padding:.15rem .5rem;
+  border-radius:.35rem;
+  font-size:1.1rem;
+  line-height:1.2;
+  font-weight:500;
+  margin:0 .4rem .3rem 0;
+  color:#fff;
+  background:var(--t-all, #5b91e5);
+}
+.artikel-tag[data-tag="engineering"]     { background:var(--t-engineering); }
+.artikel-tag[data-tag="fuehren-managen"] { background:var(--t-fm); }
+.artikel-tag[data-tag="mastery-lernen"]  { background:var(--t-mastery); color:#103b3b; }
+.artikel-tag[data-tag="safety-risiko"]   { background:var(--t-safety); }
+.artikel-tag[data-tag="skills-tools"]    { background:var(--t-skills); }
+.artikel-tag[data-tag="systemik"]        { background:var(--t-systemik); }
+
+/* Quellen/Endnoten */
+.ref-sources{ padding-left:20px; word-wrap:break-word; }
+.ref-sources>li{ padding-left:7px; }
+.ref-sources>li:target{ background:#0e53ae5e; color:black; }
+.ref-sources::before{
+  content:"";
+  border:1px solid #39465791;
+  display:block;
+  width:30%;
+  right:20px;
+  position:relative;
+  margin:-15px 0 10px;
+}
+li[id^="cite-note-"]{ scroll-margin-top:100px; }
+li[id^="cite-note-"]>a{ color:black; }
+a[id^="cite-ref-"]{
+  color:#0e53ae;
+  font-size:small;
+  vertical-align:baseline;
+  position:relative;
+  top:-0.4em;
+  display:inline;
+  scroll-margin-top:100px;
+}
+a[href^="#cite-ref-"]{
+  text-decoration:none;
+  bottom:2px;
+  position:relative;
+  padding-right:5px;
+  color:black;
+}
+
+/* TOC (optional) */
+.toc-container{ border:1px solid var(--border); border-radius:5px; margin:auto; }
+.toc-headline{ padding:10px; display:block; cursor:pointer; }
+.toc-headline h2{ display:inline-block; color:#242B33; margin-left:15px; }
+.toc-content{
+  padding-left:10px;
+  list-style:none;
+  margin-top:0;
+  line-height:3rem;
+  font-size:.9em;
+}
+.tocImg{ width:26px; height:26px; background:#bdc5cc; border-radius:20px; }
+.tocArrow{ width:16px; height:16px; float:right; margin:10px 25px 0 0; }
+.toc-headline:hover, .toc-content div:hover{ background:#F2F2F2; }
+.toc-content a{ text-decoration:none; color:#545D66; }

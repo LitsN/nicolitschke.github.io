@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "Nico Litschke",
+    "image": "../assets/img/me.jpg"
+  },
+  "articles": [
+    {
+      "title": "Systemkomplexität reduzieren und auf Ziele optimieren: Fallbeispiel „Vermögensaufbau“",
+      "url": "mdo-ipa-mc-vermoegensystem.html",
+      "image": "../assets/img/systemkomplexitaet.png",
+      "tags": ["systemik", "engineering"],
+      "date": "2026-01-10",
+      "time": "5min",
+      "excerpt": "Systemverhalten wird an Zielen bemessen, die jedoch häufig widersprüchlich zueinander sind. ..."
+    },
+    {
+      "title": "Was ist ein (Sicherheits-)Konzept?",
+      "url": "safety-concept.html",
+      "image": "../assets/img/safety-konzept.png",
+      "tags": ["safety-risiko", "engineering"],
+      "date": "2025-12-16",
+      "time": "5 min",
+      "excerpt": "Sicherheitskonzepte sind zentrale Bestandteile der ISO 26262. ..."
+    }
+  ]
+}

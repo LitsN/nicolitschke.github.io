@@ -1,0 +1,8 @@
+mjx-container{
+  overflow-x:auto;
+  overflow-y:hidden;
+  max-width:100%;
+}
+mjx-container[jax="SVG"] svg{
+  vertical-align:-6px !important;
+}
