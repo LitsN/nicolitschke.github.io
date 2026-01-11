@@ -36,20 +36,35 @@
   <h1>Texte</h1>
 
   <!-- Filter / Kategorien -->
-  <ul class="content-menu">
-    <li class="filter-icon-tag active" data-tag="__all">
-      <span class="label">Alle</span>
+  <ul class="content-menu artikel-tag-icons">
+    <li id="content-all" class="filter-icon-tag active" data-tag="__all">
+        <span class="content-el-wrapper"><span class="material-symbols-outlined">all_inclusive</span> <span class="label">Alle Texte</span></span>
     </li>
+
     <li class="filter-icon-tag" data-tag="engineering">
-      <span class="label">Engineering</span>
+        <span class="content-el-wrapper"><span class="material-symbols-outlined">settings</span><span class="label">Engineering</span></span>
     </li>
-    <li class="filter-icon-tag" data-tag="systemik">
-      <span class="label">Systemdenken</span>
+
+    <li class="filter-icon-tag" data-tag="fuehren-managen">
+        <span class="content-el-wrapper"><span class="material-symbols-outlined">manage_accounts</span><span class="label">Führen &amp; Managen</span></span>
     </li>
+
+    <li class="filter-icon-tag" data-tag="mastery-lernen">
+        <span class="content-el-wrapper"><span class="material-symbols-outlined">school</span><span class="label">Mastery &amp; Lernen</span></span>
+    </li>
+
     <li class="filter-icon-tag" data-tag="safety-risiko">
-      <span class="label">Safety & Risiko</span>
+        <span class="content-el-wrapper"><span class="material-symbols-outlined">security</span><span class="label">Safety &amp; Risiko</span></span>
     </li>
-  </ul>
+
+    <li class="filter-icon-tag" data-tag="skills-tools">
+        <span class="content-el-wrapper"><span class="material-symbols-outlined">build</span><span class="label">Skills &amp; Tools</span></span>
+    </li>
+
+    <li class="filter-icon-tag" data-tag="systemik">
+        <span class="content-el-wrapper"><span class="material-symbols-outlined">share</span><span class="label">Systemdenken</span></span>
+    </li>
+</ul>
 
   <!-- Grid -->
   <section id="artikel-grid" aria-live="polite"></section>
@@ -72,3 +87,4 @@
 
 </body>
 </html>
+
