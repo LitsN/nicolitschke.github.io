@@ -21,6 +21,7 @@
   /* Neutrale Farben */
   --bg: #fff;
   --text: #333;
+  --text-link: #5b91e5;
   --muted: #666;
   --border: #DFE2E6;
 
@@ -55,7 +56,7 @@ img{ max-width:100%; height:auto; display:block; }
 }
 
 a{
-  color:var(--nav-link);
+  color:var(--text-link);
   text-decoration:underline;
   text-underline-offset:.15em;
 }
@@ -160,6 +161,7 @@ h2,h3,h4,h5{ scroll-margin-top:100px; }
   letter-spacing:.2rem;
   color:inherit;
 }
+
 
 
 
