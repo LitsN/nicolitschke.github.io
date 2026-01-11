@@ -89,11 +89,13 @@ a:hover{ text-decoration-thickness:.12em; }
   padding:6px 8px;
   border-radius:6px;
 }
-.site-nav a:hover{
+.site-nav a:hover, .site-nav a:active{
   color:var(--nav-hover);
   background:var(--nav-hover-bg);
   text-decoration:underline;
-  text-underline-offset:.15em;
+  text-underline-offset:.5em;
+  text-decoration-thickness: .2rem;
+  
 }
 .site-nav a::after {
   content: "";
@@ -158,6 +160,7 @@ h2,h3,h4,h5{ scroll-margin-top:100px; }
   letter-spacing:.2rem;
   color:inherit;
 }
+
 
 
 
