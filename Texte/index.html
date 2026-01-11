@@ -1,45 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <title>Texte – Nico Litschke</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nico Litschke</title>
+  <meta name="description"
+        content="Texte zu Systems Engineering, Safety, Risiko und systemischem Denken.">
 
-  <meta name="description" content="Nico Litschke schreibt über Unsicherheiten und Risiken in Projekten.">
-  <meta name="robots" content="index, follow, archive">
-  <meta name="author" content="Nico Litschke">
+  <link rel="canonical" href="https://www.nicolitschke.com/Texte/">
 
-  <meta name="google-site-verification" content="1KLRTKWSuSamhN09JbMkQEd-R10iuFCNAHxdYZJVr_M">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap">
-
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Icons / Fonts (falls benötigt) -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="site-title" href="index.html">Nico Litschke</a>
-      <nav class="site-nav" aria-label="Hauptnavigation">
-        <a href="index.html">Start</a>
-        <a href="Texte/index.html">Texte</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <article class="page">
-      <h1>Über</h1>
-      <p>Hier kommt dein Startseiteninhalt hin.</p>
-    </article>
-  </main>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="site-title" href="../index.html">Nico Litschke</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="../index.html">Über</a>
+      <a href="index.html" class="is-active">Texte</a>
+    </nav>
+  </div>
+</header>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </div>
-  </footer>
+<main class="site-main container">
+
+  <h1>Texte</h1>
+
+  <!-- Filter / Kategorien -->
+  <ul class="content-menu">
+    <li class="filter-icon-tag active" data-tag="__all">
+      <span class="label">Alle</span>
+    </li>
+    <li class="filter-icon-tag" data-tag="engineering">
+      <span class="label">Engineering</span>
+    </li>
+    <li class="filter-icon-tag" data-tag="systemik">
+      <span class="label">Systemdenken</span>
+    </li>
+    <li class="filter-icon-tag" data-tag="safety-risiko">
+      <span class="label">Safety & Risiko</span>
+    </li>
+  </ul>
+
+  <!-- Grid -->
+  <section id="artikel-grid" aria-live="polite"></section>
+
+  <p id="no-results-message" class="hidden">
+    Keine passenden Texte gefunden.
+  </p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="../impressum.html">Impressum</a>
+    <a href="../datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="../assets/js/overview.js" defer></script>
+
 </body>
 </html>
