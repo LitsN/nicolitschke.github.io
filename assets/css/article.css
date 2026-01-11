@@ -1,0 +1,27 @@
+/* Artikel-spezifisch */
+.post h2{ margin-top:80px; text-align:left; }
+.post h3{ margin-top:30px; }
+
+/* Meta-Block */
+.post .content-meta{
+  display:flex;
+  align-items:center;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:0 12px 0 0;
+  font-style:normal;
+  font-size:.9em;
+  letter-spacing:.03em;
+  margin:1rem 0;
+  gap:10px;
+}
+.post .content-meta img{
+  width:50px;
+  height:50px;
+  border-radius:8px 0 0 8px;
+  object-fit:cover;
+}
+.post .meta-line{ color:var(--muted); }
+
+/* Tags im Artikel zentriert */
+.post .artikel-tag-line{ display:block; text-align:center; }
