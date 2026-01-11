@@ -94,7 +94,7 @@ a:hover{ text-decoration-thickness:.12em; }
   padding:6px 8px;
   border-radius:6px;
 }
-.site-nav a:hover, .site-nav a:is-active{
+.site-nav a:hover, .site-nav a:active{
   color:var(--nav-hover);
   background:var(--nav-hover-bg);
   text-decoration:underline;
@@ -165,12 +165,3 @@ h2,h3,h4,h5{ scroll-margin-top:100px; }
   letter-spacing:.2rem;
   color:inherit;
 }
-
-
-
-
-
-
-
-
-
