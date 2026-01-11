@@ -94,7 +94,7 @@ a:hover{ text-decoration-thickness:.12em; }
   padding:6px 8px;
   border-radius:6px;
 }
-.site-nav a:hover, .site-nav a:active{
+.site-nav a:hover, .site-nav a:is-active{
   color:var(--nav-hover);
   background:var(--nav-hover-bg);
   text-decoration:underline;
@@ -102,7 +102,7 @@ a:hover{ text-decoration-thickness:.12em; }
   text-decoration-thickness: .2rem;
   
 }
-.site-nav a::after {
+/*.site-nav a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -128,7 +128,7 @@ a:hover{ text-decoration-thickness:.12em; }
   opacity: 1;
   transform: scaleX(1);
 }
-
+*/
 .site-footer{
   border-top:1px solid var(--border);
   background:var(--footer-bg);
@@ -165,6 +165,7 @@ h2,h3,h4,h5{ scroll-margin-top:100px; }
   letter-spacing:.2rem;
   color:inherit;
 }
+
 
 
 
