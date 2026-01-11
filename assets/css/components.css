@@ -1,3 +1,74 @@
+/* Über-Seite Layout */
+.about {
+  position: relative;
+}
+
+/* DE | EN oben rechts */
+.lang-switch {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.lang-switch a {
+  color: inherit;
+  text-decoration: none;
+}
+.lang-switch a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+/* Titel zentriert wie im Screenshot */
+.about-title {
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 2.2rem;
+}
+
+/* 2-Spalten-Bereich */
+.about-hero {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* Portrait (deine Werte + sauber zentriert) */
+.portrait {
+  width: 160px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 15%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Textblock */
+.about-text p {
+  margin: 0.8em 0;
+}
+
+/* Mobile: untereinander */
+@media (max-width: 680px) {
+  .lang-switch {
+    position: static;
+    text-align: right;
+    margin-bottom: 0.8rem;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    margin: 0 auto 8px;
+  }
+}
+
+
 /* Callout */
 .callout{
   padding:5px 10px;
@@ -110,3 +181,4 @@ a[href^="#cite-ref-"]{
 .tocArrow{ width:16px; height:16px; float:right; margin:10px 25px 0 0; }
 .toc-headline:hover, .toc-content div:hover{ background:#F2F2F2; }
 .toc-content a{ text-decoration:none; color:#545D66; }
+
