@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Verhindere das Indexieren von Templates und Assets (optional, aber sauber)
+Disallow: /assets/
+Disallow: /texte/_article-template.html
+
+Sitemap: https://www.nicolitschke.com/sitemap.xml

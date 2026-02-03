@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.nicolitschke.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.nicolitschke.com/en/index.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.nicolitschke.com/texte.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nicolitschke.com/datenschutz.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.nicolitschke.com/impressum.html</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url><loc>https://www.nicolitschke.com/texte/anlagestrategien-simuliert-analysiert.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/aspice-handling-detailed-customer-designs.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/beweis-investitionen-optimieren.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/buerokratie-systemik-risiko.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/chatgpt-table-translate.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/daumenregeln.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/fluchen-performance-booster.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/funktion-von-management-moden.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/gmbh-steueroase-scam.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/ineffizienzen-projektalltag.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/iso26262-aspice-verification-bias.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/kapitalwert-basics.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/ki-agency-problem-solved.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/mdo-ipa-mc-vermoegensystem.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/pkv-npv-rueckerstattung.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/prozesse-legitimieren-sozial.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/requisite-variety.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/safety-concept.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/schmetterlingseffekt.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/stetigkeit-effektivitaet-effizienz.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/tacho-grenznutzen.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/vier-stunden-woche.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.nicolitschke.com/texte/vuca-cynefin-stacey-debunked.html</loc><priority>0.8</priority></url>
+</urlset>
