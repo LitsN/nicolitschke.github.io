@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-  (function(){
+  (function () {
     // ---------- Konstanten ----------
     const LABELS = {
-      "engineering":"Engineering",
-      "fuehren-managen":"Führen & Managen",
-      "mastery-lernen":"Mastery & Lernen",
-      "safety-risiko":"Safety & Risiko",
-      "skills-tools":"Skills & Tools",
-      "systemik":"Systemdenken"
+      "engineering": "Engineering",
+      "fuehren-managen": "Führen & Managen",
+      "mastery-lernen": "Mastery & Lernen",
+      "safety-risiko": "Safety & Risiko",
+      "skills-tools": "Skills & Tools",
+      "systemik": "Systemdenken"
     };
 
-    
+
     const CANONICAL = new Set(Object.keys(LABELS));
 
-    const DATA_URL = "../assets/data/articles.json";
-    const HERO_SRC = (name) => `../assets/img/${name}/hero.png`;
-    const ARTICLE_HREF = (name) => `../texte/${name}.html`;
+    const DATA_URL = "assets/data/articles.json";
+    const HERO_SRC = (name) => `assets/img/${name}/hero.png`;
+    const ARTICLE_HREF = (name) => `texte/${name}.html`;
 
     const grid = document.getElementById('card-grid');
     const noMsg = document.getElementById('no-results-message');
@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!grid) return;
 
-    function normalizeTags(tags){
-      if(!Array.isArray(tags)) return [];
-      const seen = new Set(), out=[];
-      for(const t of tags){
+    function normalizeTags(tags) {
+      if (!Array.isArray(tags)) return [];
+      const seen = new Set(), out = [];
+      for (const t of tags) {
         if (CANONICAL.has(t) && !seen.has(t)) { seen.add(t); out.push(t); }
       }
       return out;
@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
       // Die Liste (Container)
       const tagLine = document.createElement('ul');
       tagLine.className = 'card-tag-line';
-      
+
       tagsNorm.forEach(t => {
         const li = document.createElement('li');
-        li.className = 'card-tag'; 
-        li.dataset.tag = t;   
+        li.className = 'card-tag';
+        li.dataset.tag = t;
         li.textContent = LABELS[t] || t;
         tagLine.appendChild(li);
       });
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return art;
     }
 
-    function renderArticles(articles){
+    function renderArticles(articles) {
       grid.innerHTML = '';
       const frag = document.createDocumentFragment();
       articles.forEach(a => frag.appendChild(createCard(a)));
@@ -99,17 +99,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    function articleMatchesFilter(articleEl){
+    function articleMatchesFilter(articleEl) {
       if (activeTags.length === 0) return true;
       const articleTags = (articleEl.getAttribute('data-tags') || '')
-        .split(',').map(s=>s.trim()).filter(Boolean);
+        .split(',').map(s => s.trim()).filter(Boolean);
       const useAnd = andFilterToggle && andFilterToggle.checked;
       return useAnd
         ? activeTags.every(t => articleTags.includes(t))
         : activeTags.some(t => articleTags.includes(t));
     }
 
-    function applyFilter(){
+    function applyFilter() {
       const cards = grid.querySelectorAll('.card');
       let any = false;
       cards.forEach(card => {
@@ -120,10 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (noMsg) noMsg.style.display = any ? 'none' : 'block';
       if (activeTags.length > 0) {
         window.scrollTo({ top: grid.offsetTop - 100, behavior: 'smooth' });
-    }
+      }
     }
 
-    function syncFilterButtons(){
+    function syncFilterButtons() {
       tagButtons.forEach(btn => {
         const t = btn.dataset.tag;
         if (t === '__all') btn.classList.toggle('active', activeTags.length === 0);
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    function wireFilters(){
+    function wireFilters() {
       tagButtons.forEach(button => {
         button.addEventListener('click', () => {
           const tag = button.dataset.tag;
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const articles = arr
           .filter(a => a?.title && a?.name)
           .map(a => ({ ...a, tags: normalizeTags(a.tags) }))
-          .sort((a,b) => String(b.date).localeCompare(String(a.date)));
+          .sort((a, b) => String(b.date).localeCompare(String(a.date)));
 
         checkUrlForFilters(); // 1. URL Parameter checken
         renderArticles(articles);
